@@ -1,14 +1,22 @@
 <script>
+  import Header from "./components/header.vue";
+  import Main from "./components/main.vue";
+  import Footer from "./components/footer.vue";
+
   export default{
-    name: "App"
+    name: "App",
+    components: {
+      Header,
+      Main,
+      Footer
+    }
   }
 </script>
 
 <template>
-  <div class="container d-flex justify-content-between">
-    <h3>ciaoo</h3>
-    <font-awesome-icon icon="fa-solid fa-star" />
-  </div>
+  <Header/>
+  <Main/>
+  <Footer/>
 </template>
 
 <style>
