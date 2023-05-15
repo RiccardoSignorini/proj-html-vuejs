@@ -40,9 +40,9 @@
         height: 600px;
 
         hr{
-            width: 200px;
+            width: 180px;
             background-color: #fed23f;
-            height: 3px;
+            height: 2px;
             opacity: 1;
             border: 0;
             margin: 0 auto;
