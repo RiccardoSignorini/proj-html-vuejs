@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <div id="mainFirst">
+    <div id="main-first">
         <div class="container">
             <div class="text-center">
                 <h3 class="py-2">Specialist In Modern Construction</h3>
@@ -54,8 +54,7 @@
 </template>
 
 <style scoped lang="scss">
-
-    hr{
+   hr{
         width: 200px;
         background-color: #fed23f;
         height: 3px;
@@ -63,8 +62,8 @@
         border: 0;
         margin: 0 auto;
     }
-
-    .card{
+   
+   .card{
         font-size: 13px;
         width: 250px;
         background-color: #ededed;

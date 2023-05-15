@@ -14,6 +14,9 @@ import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons'
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons'
 import { faTruck } from '@fortawesome/free-solid-svg-icons'
-library.add(faBuilding, faArrowsRotate, faHouseChimney, faTruck)
+import { faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+library.add(faBuilding, faArrowsRotate, faHouseChimney, faTruck, faSuitcase, faUsers, faGlobe)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
