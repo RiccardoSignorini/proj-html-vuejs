@@ -26,9 +26,9 @@
                 <img src="/img/project1-featured-294276386-800x800.jpg" alt="">
                 <img src="/img/project3-featured-189023420-800x800.jpg" alt="">
             </div>
-            <div id="foot-third" class="d-flex align-items-center my-4">
+            <div id="foot-third" class="my-4 d-flex align-items-center justify-content-center">
                 <hr>
-                <a href="#">VIEW ALL PROJECTS</a>
+                <a href="#">VIEW ALL PRODUCTS</a>
                 <hr>
             </div>
         </div>
@@ -65,6 +65,7 @@
                 color: black;
                 opacity: 0.6;
                 font-size: 13px;
+                margin: 0 10px;
             }
 
             a:hover{
@@ -74,6 +75,7 @@
             hr{
                 background-color: black;
                 height: 1px;
+                width: 200px;
                 opacity: 0.6;
             }
         }

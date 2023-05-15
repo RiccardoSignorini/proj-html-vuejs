@@ -51,13 +51,12 @@
                     </div>
                 </div>
             </div>
-            <div id="foot-sixth" class="d-flex align-items-center my-4 text-center">
+            <div id="foot-sixth" class="my-4 d-flex align-items-center justify-content-center">
                 <hr>
-                <a href="#">VIEW ALL PROJECTS</a>
+                <a href="#">VIEW ALL PRODUCTS</a>
                 <hr>
             </div>    
         </div>
-        
     </div>
 </template>
 
@@ -94,6 +93,7 @@
                 color: black;
                 opacity: 0.6;
                 font-size: 13px;
+                margin: 0 10px;
             }
 
             a:hover{
@@ -101,9 +101,9 @@
             }
 
             hr{
-                background-color: black;
+                background-color: white;
                 height: 1px;
-                opacity: 0.6;
+                width: 200px;
             }
         }
     }
