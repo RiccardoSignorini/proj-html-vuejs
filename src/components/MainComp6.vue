@@ -63,6 +63,7 @@
 <style scoped lang="scss">
     #main-sixth{
         height: 700px;
+        background-color: #f7f7f7;
 
         #title{
             width: 550px;

@@ -5,29 +5,37 @@
         name: "MainComp7",
         data(){
             return{
-                latestNews: []
+                partnersImg: [
+                    "/img/home-logo11-219096700-320x202.png",
+                    "/img/home-logo10-219096700-320x202.png",
+                    "/img/home-logo2-219096700-320x202.png",
+                    "/img/home-logo1-219096700-320x202.png",
+                    "/img/home-logo9-219096700-320x202.png",
+            ]
             }
         }
     }
 </script>
 
 <template>
-    <div id="main-seventh" class="d-flex align-items-center">
+    <div id="main-seventh" class="d-flex align-items-center text-center">
         <div class="container py-4">
             <!-- PARTE TITOLO -->
-            <div id="title" class="text-center">
-                <h3 class="py-2">Latest News</h3>
+            <div id="title">
+                <h3 class="py-2">Trusted Partners</h3>
                 <hr>
                 <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
             </div>
-                
+            <div>
+                <img v-for="(elem,index) in partnersImg" :key="index" :src="elem" alt="">
+            </div>    
         </div>
     </div>
 </template>
 
 <style scoped lang="scss">
     #main-seventh{
-        height: 500px;
+        height: 400px;
 
         #title{
             width: 550px;
@@ -41,6 +49,11 @@
                 border: 0;
                 margin: 0 auto;
             }
+        }
+
+        img{
+            width: 180px;
+            margin: 0 15px;
         }
     }
 </style>
