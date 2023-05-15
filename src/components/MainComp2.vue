@@ -1,3 +1,5 @@
+<!-- PARTE NUMERI AZIENDALI -->
+
 <script>
     export default{
         name: "MainComp2",
@@ -33,7 +35,8 @@
 <template>
     <div id="main-second" class="d-flex align-items-center">
         <div class="container px-4 d-flex justify-content-center">
-            <div class="card text-center" v-for="(elem, index) in societyNumbers" :key="index">
+            <!-- CARD SINGOLA CICLATA -->
+            <div class="card text-center mx-3" v-for="(elem, index) in societyNumbers" :key="index">
                 <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2"/>
                 <div class="card-body">
                     <h2 class="card-title">{{ elem.num }}</h2>
@@ -47,6 +50,7 @@
 <style scoped lang="scss">
    #main-second{
         background-image: url("/img/home-244125289.jpg");
+        background-size: cover;
         height: 450px;
 
         .card{

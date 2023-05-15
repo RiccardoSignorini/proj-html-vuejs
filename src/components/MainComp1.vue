@@ -1,3 +1,5 @@
+<!-- PARTE PRESENTAZIONE AZIENDA (COSTRUZIONI MODERNE) -->
+
 <script>
     export default{
         name: "MainComp1",
@@ -33,6 +35,7 @@
 <template>
     <div id="main-first">
         <div class="container">
+            <!-- PARTE TITOLO -->
             <div class="text-center">
                 <h3 class="py-2">Specialist In Modern Construction</h3>
                 <hr>
@@ -54,19 +57,22 @@
 </template>
 
 <style scoped lang="scss">
-   hr{
-        width: 200px;
-        background-color: #fed23f;
-        height: 3px;
-        opacity: 1;
-        border: 0;
-        margin: 0 auto;
+    #main-first{
+        hr{
+            width: 200px;
+            background-color: #fed23f;
+            height: 3px;
+            opacity: 1;
+            border: 0;
+            margin: 0 auto;
+        }
+   
+        .card{
+            font-size: 13px;
+            width: 250px;
+            background-color: #ededed;
+            border: 0 !important;
+        }
     }
    
-   .card{
-        font-size: 13px;
-        width: 250px;
-        background-color: #ededed;
-        border: 0 !important;
-    }
 </style>
