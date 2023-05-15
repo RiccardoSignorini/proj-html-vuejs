@@ -51,7 +51,7 @@
    #main-second{
         background-image: url("/img/home-244125289.jpg");
         background-size: cover;
-        height: 450px;
+        height: 600px;
 
         .card{
             border: 0 !important;
