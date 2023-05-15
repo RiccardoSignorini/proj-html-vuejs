@@ -27,6 +27,18 @@
                     }
                 ]
             }
+        },
+        methods: {
+            // FUNZIONE CAMBIO SELECTED AL CLICK DEI LINK
+            click(index){
+                this.link.forEach((elem, i) => {
+                    if (index === i) {
+                        elem.selected = true;
+                    } else {
+                        elem.selected = false;
+                    }
+                });
+            }
         }
     }
     
@@ -40,7 +52,7 @@
 
         <div class="d-flex justify-content-center align-items-center">
             <ul class="d-flex">
-                <li v-for="(elem, index) in link" :key="index" class="mx-2">
+                <li v-for="(elem, index) in link" :key="index" class="mx-2" @click="click(index)">
                     <a href="#" :class="(elem.selected==true) ? 'active' : ' ' ">{{ elem.name }}</a>
                 </li>
             </ul>
