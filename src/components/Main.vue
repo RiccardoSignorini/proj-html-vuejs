@@ -5,6 +5,7 @@
     import MainComp4 from "./MainComp4.vue"
     import MainComp5 from "./MainComp5.vue"
     import MainComp6 from "./MainComp6.vue"
+    import MainComp7 from "./MainComp7.vue"
 
     export default{
         name: "Header",
@@ -15,6 +16,7 @@
             MainComp4,
             MainComp5,
             MainComp6,
+            MainComp7
         }
     }
 </script>
@@ -32,6 +34,8 @@
     <MainComp5/>
     <!-- PARTE ULTIME NEWS -->
     <MainComp6/>
+    <!-- PARTE PARTNERS -->
+    <MainComp7/>
 </template>
 
 <style scoped lang="scss">
