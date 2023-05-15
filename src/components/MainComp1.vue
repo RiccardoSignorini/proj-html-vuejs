@@ -33,11 +33,13 @@
 <template>
     <div id="mainFirst">
         <div class="container">
-            <div>
-                
+            <div class="text-center">
+                <h3 class="py-2">Specialist In Modern Construction</h3>
+                <hr>
+                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum, quos dolorum numquam quaerat tempore labore ab id fugit optio illo mollitia.</p>    
             </div>
             <!-- CARD SINGOLA CICLATA -->
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between my-4">
                 <div class="card text-center" v-for="(elem, index) in modernConstruction" :key="index">
                     <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2"/>
                     <div class="card-body">
@@ -52,6 +54,16 @@
 </template>
 
 <style scoped lang="scss">
+
+    hr{
+        width: 200px;
+        background-color: #fed23f;
+        height: 3px;
+        opacity: 1;
+        border: 0;
+        margin: 0 auto;
+    }
+
     .card{
         font-size: 13px;
         width: 250px;
