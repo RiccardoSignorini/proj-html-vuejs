@@ -12,6 +12,18 @@
                         date: "December 7th, 2015",
                         text: "Technology is Here to Stay Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum."
                     },
+                    {
+                        img: "/img/blog-post-332773904-600x362.jpg",
+                        title: "How We Manage Large Construction Projects",
+                        date: "December 7th, 2015",
+                        text: "Technology is Here to Stay Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum."
+                    },
+                    {
+                        img: "/img/blog-post-92486644-600x362.jpg",
+                        title: "Future proofing a modern home",
+                        date: "December 6th, 2015",
+                        text: "Technology is Here to Stay Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum."
+                    }
                 ]
             }
         }
@@ -20,32 +32,38 @@
 
 <template>
     <div id="main-sixth" class="d-flex align-items-center">
-        <div class="container text-center py-4">
+        <div class="container py-4">
             <!-- PARTE TITOLO -->
-            <div id="title">
+            <div id="title" class="text-center">
                 <h3 class="py-2">Latest News</h3>
                 <hr>
                 <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
             </div>
-        </div>
-        <div class="container px-4 d-flex justify-content-center">
-            <!-- CARD SINGOLA CICLATA -->
-            <!-- <div class="card text-center mx-3" v-for="(elem, index) in societyNumbers" :key="index">
-                <img src="" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">{{ elem.num }}</h3>
-                    <span></span>
-                    <hr>
-                    <p class="card-text">{{ elem.text }}</p>
+            <div class="container px-4 d-flex justify-content-center">
+                <!-- CARD SINGOLA CICLATA -->
+                <div class="card mx-3" v-for="(elem, index) in latestNews" :key="index">
+                    <img :src="elem.img" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ elem.title }}</h5>
+                        <span>{{ elem.date }}</span>
+                        <hr>
+                        <p class="card-text">{{ elem.text }}</p>
+                    </div>
                 </div>
-            </div> -->
+            </div>
+            <div id="foot-sixth" class="d-flex align-items-center my-4 text-center">
+                <hr>
+                <a href="#">VIEW ALL PROJECTS</a>
+                <hr>
+            </div>    
         </div>
+        
     </div>
 </template>
 
 <style scoped lang="scss">
     #main-sixth{
-        height: 600px;
+        height: 700px;
 
         #title{
             width: 550px;
@@ -58,6 +76,34 @@
                 opacity: 1;
                 border: 0;
                 margin: 0 auto;
+            }
+        }
+
+        .card{
+            width: 300px;
+
+            span{
+                font-size: 10px;
+            }
+        }
+
+        #foot-sixth{
+
+            a{
+                text-decoration: none;
+                color: black;
+                opacity: 0.6;
+                font-size: 13px;
+            }
+
+            a:hover{
+                opacity: 1;
+            }
+
+            hr{
+                background-color: black;
+                height: 1px;
+                opacity: 0.6;
             }
         }
     }
