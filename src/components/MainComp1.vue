@@ -33,46 +33,47 @@
 </script>
 
 <template>
-    <div id="main-first">
+    <div id="main-first" class="d-flex align-items-center">
         <div class="container text-center">
-            <!-- PARTE TITOLO -->
-            <div id="title">
-                <h3 class="py-2">Our Core Vlaues</h3>
-                <hr>
-                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
-            </div>
-            <!-- CARD SINGOLA CICLATA -->
-            <div class="d-flex justify-content-between my-4">
-                <div class="card text-center" v-for="(elem, index) in modernConstruction" :key="index">
-                    <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2"/>
-                    <div class="card-body">
-                        <h4 class="card-title">{{ elem.title }}</h4>
-                        <p class="card-text">{{ elem.text }}</p>
-                    </div>
+            <div>
+                <!-- PARTE TITOLO -->
+                <div id="title">
+                    <h3 class="py-2">Our Core Vlaues</h3>
+                    <hr>
+                    <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
+                </div>
+                <!-- CARD SINGOLA CICLATA -->
+                <div class="d-flex justify-content-between my-4">
+                    <div class="card text-center" v-for="(elem, index) in modernConstruction" :key="index">
+                        <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2"/>
+                        <div class="card-body">
+                            <h4 class="card-title">{{ elem.title }}</h4>
+                            <p class="card-text">{{ elem.text }}</p>
+                        </div>
+                    </div>    
                 </div>    
             </div>
-            
         </div>
     </div>
 </template>
 
 <style scoped lang="scss">
     #main-first{
-        height: 500px;
+        height: 600px;
 
         #title{
             width: 550px;
             margin: 0 auto;
-        }
 
-        hr{
-            width: 180px;
-            background-color: #fed23f;
-            height: 2px;
-            opacity: 1;
-            border: 0;
-            margin: 0 auto;
-        }
+            hr{
+                width: 180px;
+                background-color: #fed23f;
+                height: 2px;
+                opacity: 1;
+                border: 0;
+                margin: 0 auto;
+            }    
+        }        
    
         .card{
             font-size: 13px;

@@ -68,15 +68,15 @@
         #title{
             width: 550px;
             margin: 0 auto;
-        }
 
-        hr{
-            width: 180px;
-            background-color: #fed23f;
-            height: 2px;
-            opacity: 1;
-            border: 0;
-            margin: 0 auto;
+            hr{
+                width: 180px;
+                background-color: #fed23f;
+                height: 2px;
+                opacity: 1;
+                border: 0;
+                margin: 0 auto;
+            }    
         }
         
         .card{

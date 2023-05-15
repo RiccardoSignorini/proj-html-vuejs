@@ -2,7 +2,7 @@
 
 <script>
     export default{
-        name: "MainComp4",
+        name: "MainComp5",
         data(){
             return{
                 
