@@ -58,6 +58,8 @@
 
 <style scoped lang="scss">
     #main-first{
+        height: 500px;
+
         hr{
             width: 200px;
             background-color: #fed23f;

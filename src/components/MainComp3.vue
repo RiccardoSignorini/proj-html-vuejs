@@ -37,7 +37,8 @@
 
 <style scoped lang="scss">
     #main-third{
-    
+        height: 600px;
+
         hr{
             width: 200px;
             background-color: #fed23f;
