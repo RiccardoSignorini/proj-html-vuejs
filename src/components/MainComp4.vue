@@ -40,10 +40,10 @@
     <div id="main-fourth">
         <div class="container text-center py-4">
             <!-- PARTE TITOLO -->
-            <div>
+            <div id="title">
                 <h3 class="py-2">Our Core Vlaues</h3>
                 <hr>
-                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum, quos dolorum numquam quaerat tempore labore ab id fugit optio illo mollitia.</p>    
+                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
             </div>
             <div class="d-flex">
                 <!-- CARD SINGOLA CICLATA -->
@@ -64,6 +64,11 @@
     #main-fourth{
         height: 600px;
         background-color: #f7f7f7;
+
+        #title{
+            width: 550px;
+            margin: 0 auto;
+        }
 
         hr{
             width: 180px;

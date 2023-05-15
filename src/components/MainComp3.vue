@@ -15,10 +15,10 @@
     <div id="main-third">
         <div class="container text-center my-4">
             <!-- PARTE TITOLO -->
-            <div>
-                <h3 class="py-2">Explore Recent Work</h3>
+            <div id="title">
+                <h3 class="py-2">Our Core Vlaues</h3>
                 <hr>
-                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum, quos dolorum numquam quaerat tempore labore ab id fugit optio illo mollitia.</p>    
+                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
             </div>
             <!-- PARTE IMMAGINI -->
             <div class="my-4">
@@ -38,6 +38,11 @@
 <style scoped lang="scss">
     #main-third{
         height: 600px;
+
+        #title{
+            width: 550px;
+            margin: 0 auto;
+        }
 
         hr{
             width: 180px;

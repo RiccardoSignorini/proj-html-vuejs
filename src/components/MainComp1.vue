@@ -34,12 +34,12 @@
 
 <template>
     <div id="main-first">
-        <div class="container">
+        <div class="container text-center">
             <!-- PARTE TITOLO -->
-            <div class="text-center">
-                <h3 class="py-2">Specialist In Modern Construction</h3>
+            <div id="title">
+                <h3 class="py-2">Our Core Vlaues</h3>
                 <hr>
-                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum, quos dolorum numquam quaerat tempore labore ab id fugit optio illo mollitia.</p>    
+                <p class="py-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptas sapiente reprehenderit voluptates, impedit suscipit ut voluptate illum.</p>    
             </div>
             <!-- CARD SINGOLA CICLATA -->
             <div class="d-flex justify-content-between my-4">
@@ -59,6 +59,11 @@
 <style scoped lang="scss">
     #main-first{
         height: 500px;
+
+        #title{
+            width: 550px;
+            margin: 0 auto;
+        }
 
         hr{
             width: 180px;
