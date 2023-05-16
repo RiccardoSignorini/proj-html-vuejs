@@ -56,7 +56,7 @@
                     <a href="#" :class="(elem.selected==true) ? 'active' : ' ' ">{{ elem.name }}</a>
                 </li>
             </ul>
-            <button class="px-4 py-1 mx-3">GET QUOTE</button>
+            <button class="px-5 py-2 mx-3">GET QUOTE</button>
         </div>
     </div>
 </template>
@@ -93,6 +93,10 @@
         button{
             background-color: #fed23f;
             border: 0;
+        }
+
+        button:hover{
+            color: white;
         }
     }
 </style>
