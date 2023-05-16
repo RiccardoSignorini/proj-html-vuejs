@@ -45,7 +45,7 @@
                 <!-- CARD SINGOLA CICLATA -->
                 <div class="d-flex justify-content-between my-4">
                     <div class="card text-center" v-for="(elem, index) in modernConstruction" :key="index">
-                        <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2"/>
+                        <font-awesome-icon :icon="elem.icon" size="2xl" class="my-2 icon"/>
                         <div class="card-body">
                             <h4 class="card-title">{{ elem.title }}</h4>
                             <p class="card-text">{{ elem.text }}</p>
@@ -80,6 +80,15 @@
             width: 250px;
             background-color: #ededed;
             border: 0 !important;
+
+            .icon{
+                width: 25px;
+                height: 25px;
+                padding: 10px;
+                border-radius: 100%;
+                margin: 0 auto;
+                border: 1px solid black;
+            }
         }
     }
    

@@ -84,7 +84,6 @@
             border: 0;
 
             .icon{
-                display: inline;
                 width: 50px;
                 height: 50px;
                 padding: 20px;

@@ -24,7 +24,7 @@
         <div class="container">
             <div class="my-4">
                 <h1 class="text-light">BUILDING INSPIRING SPACES</h1>
-                <p>We Build Inspiring Residential & Commercial Space</p>
+                <p id="color-ye">We Build Inspiring Residential & Commercial Space</p>
             </div>
             <div class="my-4">
                 <button id="color-black" class="px-4 py-2 mx-2">EXPLORE RECENT WORK</button>
@@ -39,6 +39,10 @@
         height: 600px;
         background-image: url("/img/home-slider-62528242.jpg");
         background-size: cover;
+
+        #color-ye{
+            color: #fed23f;
+        }
 
         #color-black{
             background-color: #31312f;
