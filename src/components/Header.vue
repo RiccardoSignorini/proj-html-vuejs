@@ -15,27 +15,38 @@
                     {
                         name: "HOME",
                         selected: true,
-                        imgPath: "/img/home-slider-62528242.jpg"
+                        imgPath: "/img/home-slider-62528242.jpg",
+                        title: "BUILDING INSPIRING SPACES",
+                        text: "We Build Inspiring Residential & Commercial Space",
+                        button: true
                     },
                     {
                         name: "ABOUT",
                         selected: false,
-                        imgPath: "/img/about-150120215.jpg"
+                        imgPath: "/img/about-150120215.jpg",
+                        title: "CONSTRUCTION WITH A DIFFERENCE",
+                        text: "Avada Construction Puts The Focus Back On Exceptional Service"
                     },
                     {
                         name: "SERVICES",
                         selected: false,
-                        imgPath: "/img/services-banner-51526282.jpg"
+                        imgPath: "/img/services-banner-51526282.jpg",
+                        title: "CONSTRUCTION SERVICES",
+                        text: "We Build Inspiring Residential & Commercial Spaces"
                     },
                     {
                         name: "WORK",
                         selected: false,
-                        imgPath: "/img/work-88948309.jpg"
+                        imgPath: "/img/work-88948309.jpg",
+                        title: "OUR RECENT WORK",
+                        text: "Inspired By Modern Living & Cutting-Edge Construction Techniques"
                     },
                     {
                         name: "ARTICLES",
                         selected: false,
-                        imgPath: "/img/latest-news-93376240.jpg"
+                        imgPath: "/img/latest-news-93376240.jpg",
+                        title: "CONSTRUCTION ARTICLES",
+                        text: "Thought Leaders In Modern Residential & Commercial Construction"
                     }
                 ]
             }
@@ -54,11 +65,12 @@
             },
 
             // FUNZIONE PER IL CONTROLLO DELL'OBJ E IL CAMBIO IMG
-            backImgPath() {
-                for(let i=0; i<this.link.length; i++)
+            backElem() {
+                for(let i=0; i<this.link.length; i++){
                     if(this.link[i].selected == true){
-                        return this.link[i].imgPath
+                        return this.link[i]
                     }
+                }
             }
         }
     }
@@ -80,7 +92,7 @@
             <button class="px-5 py-2 mx-3">GET QUOTE</button>
         </div>
     </div>
-    <HeaderComp1 :imgPath="backImgPath()"/>
+    <HeaderComp1 :elem="backElem()"/>
     <HeaderComp2/>
 </template>
 

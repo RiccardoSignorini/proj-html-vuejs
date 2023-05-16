@@ -2,7 +2,7 @@
     export default{
         name: "HeaderComp1",
         props: {
-            imgPath: String
+            elem: String
         },
 
         data(){
@@ -18,13 +18,13 @@
 </script>
 
 <template>
-    <div id="header-comp" class="d-flex text-center align-items-center" :style="{'background-image': `url('${imgPath}')`}"> 
+    <div id="header-comp" class="d-flex text-center align-items-center" :style="{'background-image': `url('${elem.imgPath}')`}"> 
         <div class="container">
             <div class="my-4">
-                <h1 class="text-light">BUILDING INSPIRING SPACES</h1>
-                <p id="color-ye">We Build Inspiring Residential & Commercial Space</p>
+                <h1 class="text-light">{{ elem.title }}</h1>
+                <p id="color-ye">{{ elem.text }}</p>
             </div>
-            <div class="my-4">
+            <div class="my-4" :class="(elem.button) ? '' : 'd-none'">
                 <button id="color-black" class="px-4 py-2 mx-2">EXPLORE RECENT WORK</button>
                 <button id="color-yellow" class="px-4 py-2 mx-2">GET A QUOTE TODAY</button>
             </div>
