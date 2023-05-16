@@ -31,5 +31,12 @@
             background-color: #31312f;
             color: white;
         }
+
+        button:hover{
+            bottom: -80px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+        }
     }
 </style>

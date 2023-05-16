@@ -58,7 +58,7 @@
             }
             
             button:hover{
-                color: white;
+                background-color: white;
             }
             
             p{
