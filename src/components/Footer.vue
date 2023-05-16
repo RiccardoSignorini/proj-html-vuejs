@@ -67,15 +67,15 @@
         </div>
     </div>
     <!-- PARTE BASSA FOOTER -->
-    <div id="bot-footer" class="align-items-center text-light d-flex justify-content-between px-5">
+    <div id="bot-footer" class="align-items-center d-flex justify-content-between px-5">
         <div>
             <p>©COPYRIGHT 2012 - 2023 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED | POWERED BY WORDPRESS</p>
         </div>
         <div>
-            <font-awesome-icon icon="fa-brands fa-facebook-f" />
-            <font-awesome-icon icon="fa-brands fa-twitter" />
-            <font-awesome-icon icon="fa-brands fa-youtube" />
-            <font-awesome-icon icon="fa-brands fa-instagram" />
+            <font-awesome-icon icon="fa-brands fa-facebook-f" class="icon"/>
+            <font-awesome-icon icon="fa-brands fa-twitter" class="icon"/>
+            <font-awesome-icon icon="fa-brands fa-youtube" class="icon"/>
+            <font-awesome-icon icon="fa-brands fa-instagram" class="icon"/>
         </div>
     </div>
 </template>
@@ -120,6 +120,7 @@
         }
 
         #fourth-comp{
+            color: #6d6d6d;
 
             img{
                 width: 250px;
@@ -130,5 +131,9 @@
     #bot-footer{
         background-color: black;
         height: 100px;
+
+        .icon{
+            margin: 0 10px;
+        }
     }
 </style>
