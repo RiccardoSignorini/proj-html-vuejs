@@ -1,6 +1,11 @@
 <script>
+    import HeaderComp1 from "./HeaderComp1.vue"
+
     export default{
         name: "Header",
+        components: {
+            HeaderComp1
+        },
 
         data(){
             return{
@@ -59,6 +64,7 @@
             <button class="px-5 py-2 mx-3">GET QUOTE</button>
         </div>
     </div>
+    <HeaderComp1/>
 </template>
 
 <style scoped lang="scss">
@@ -69,26 +75,33 @@
             height: 50px;
         }
 
-        li{
-            list-style-type: none;
+        ul{
+            margin: 0 auto !important;
 
-            a{
-                text-decoration: none;
-                color: black;
-            }
+            li{
+                list-style-type: none;
 
-            a:hover{
-                opacity: 0.5;
-            }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
 
-            .active{
-                color: #fed23f !important;
-            }
+                a:hover{
+                    color: #fed23f;
+                    opacity: 0.6;
+                }
 
-            .active:hover{
-                opacity: 1;
-            }
+                .active{
+                    color: #fed23f !important;
+                }
+
+                .active:hover{
+                    opacity: 1;
+                }
+            }    
         }
+
+        
 
         button{
             background-color: #fed23f;
