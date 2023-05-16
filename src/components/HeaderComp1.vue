@@ -1,31 +1,13 @@
 <script>
     export default{
         name: "HeaderComp1",
+        props: {
+            imgPath: String
+        },
 
         data(){
             return{
-                link: [
-                    {
-                        name: "HOME",
-                        selected: true
-                    },
-                    {
-                        name: "ABOUT",
-                        selected: false
-                    },
-                    {
-                        name: "SERVICES",
-                        selected: false
-                    },
-                    {
-                        name: "WORK",
-                        selected: false
-                    },
-                    {
-                        name: "ARTICLES",
-                        selected: false
-                    }
-                ]
+                
             }
         },
         methods: {
@@ -35,8 +17,10 @@
     
 </script>
 
+<!-- :style="{'background-image': `url('${imgPath}')`}" -->
+
 <template>
-    <div id="header-comp">
+    <div id="header-comp"> 
         <div class="container">
 
         </div>

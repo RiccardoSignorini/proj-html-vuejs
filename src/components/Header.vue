@@ -1,10 +1,12 @@
 <script>
     import HeaderComp1 from "./HeaderComp1.vue"
+    import HeaderComp2 from "./HeaderComp2.vue"
 
     export default{
         name: "Header",
         components: {
-            HeaderComp1
+            HeaderComp1,
+            HeaderComp2
         },
 
         data(){
@@ -12,27 +14,33 @@
                 link: [
                     {
                         name: "HOME",
-                        selected: true
+                        selected: true,
+                        imgPath: "/img/home-slider-62528242.jpg"
                     },
                     {
                         name: "ABOUT",
-                        selected: false
+                        selected: false,
+                        imgPath: "/img/about-150120215.jpg"
                     },
                     {
                         name: "SERVICES",
-                        selected: false
+                        selected: false,
+                        imgPath: "/img/services-banner-51526282.jpg"
                     },
                     {
                         name: "WORK",
-                        selected: false
+                        selected: false,
+                        imgPath: "/img/work-88948309.jpg"
                     },
                     {
                         name: "ARTICLES",
-                        selected: false
+                        selected: false,
+                        imgPath: "/img/latest-news-93376240.jpg"
                     }
                 ]
             }
         },
+
         methods: {
             // FUNZIONE CAMBIO SELECTED AL CLICK DEI LINK
             click(index){
@@ -43,6 +51,13 @@
                         elem.selected = false;
                     }
                 });
+            },
+
+            // FUNZIONE PER IL CONTROLLO DELL'OBJ E IL CAMBIO IMG
+            backImgPath() {
+                if(this.link.selected == true){
+                    return this.link.imgPath
+                }
             }
         }
     }
@@ -64,7 +79,8 @@
             <button class="px-5 py-2 mx-3">GET QUOTE</button>
         </div>
     </div>
-    <HeaderComp1/>
+    <HeaderComp1 :imgPath="backImgPath()"/>
+    <HeaderComp2/>
 </template>
 
 <style scoped lang="scss">
