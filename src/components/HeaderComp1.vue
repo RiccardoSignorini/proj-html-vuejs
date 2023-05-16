@@ -17,10 +17,8 @@
     
 </script>
 
-<!-- :style="{'background-image': `url('${imgPath}')`}" -->
-
 <template>
-    <div id="header-comp" class="d-flex text-center align-items-center"> 
+    <div id="header-comp" class="d-flex text-center align-items-center" :style="{'background-image': `url('${imgPath}')`}"> 
         <div class="container">
             <div class="my-4">
                 <h1 class="text-light">BUILDING INSPIRING SPACES</h1>
@@ -37,7 +35,6 @@
 <style scoped lang="scss">
     #header-comp{
         height: 600px;
-        background-image: url("/img/home-slider-62528242.jpg");
         background-size: cover;
 
         #color-ye{

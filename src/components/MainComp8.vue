@@ -58,7 +58,8 @@
             }
             
             button:hover{
-                background-color: white;
+                background-color: #31312f;
+                color: white;
             }
             
             p{

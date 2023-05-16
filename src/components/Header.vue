@@ -55,9 +55,10 @@
 
             // FUNZIONE PER IL CONTROLLO DELL'OBJ E IL CAMBIO IMG
             backImgPath() {
-                if(this.link.selected == true){
-                    return this.link.imgPath
-                }
+                for(let i=0; i<this.link.length; i++)
+                    if(this.link[i].selected == true){
+                        return this.link[i].imgPath
+                    }
             }
         }
     }
