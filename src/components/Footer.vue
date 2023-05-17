@@ -33,26 +33,64 @@
                 <h6 class="my-4">CONTACT US TODAY</h6>
                 <div>
                     <ul>
-                        <li>Corporate Location</li>
-                        <li>1600 Amphitheatre Parkway</li>
-                        <li>London WC1 1BA</li>
-                    </ul>
-                    <ul>
-                        <li>Residential Location</li>
-                        <li>9521 Broadsberry Avenue</li>
-                        <li>Paddington RC7 9ZA</li>
-                    </ul>
-                    <ul>
-                        <li>1.800.458.556 / 1.800.532.2112</li>
-                    </ul>
-                    <ul>
-                        <li>info@your-domain.com</li>
-                    </ul>
-                    <ul>
-                        <li>Monday – Friday: 9:00 AM – 6:00 PM</li>
-                    </ul>
-                    <ul>
-                        <li>Saturday – Sunday: 9:00 AM – 12:00 PM</li>
+                        <!-- PRIMO CON ICONA MONDO -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-solid fa-globe" class="icon"/>
+                            </div>
+                            <div>
+                                <p>Corporate Location</p>
+                                <p>1600 Amphitheatre Parkway</p>
+                                <p>London WC1 1BA</p>
+                            </div>
+                        </li>
+                        <!-- SECONDO CON ICONA CASA -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-solid fa-house-chimney" class="icon"/>
+                            </div>
+                            <div>
+                                <p>Residential Location</p>
+                                <p>9521 Broadsberry Avenue</p>
+                                <p>Paddington RC7 9ZA</p>
+                            </div>
+                        </li>
+                        <!-- TERZO CON ICONA TELEFONO -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-solid fa-phone-flip" class="icon"/>
+                            </div>
+                            <div>
+                                <p>1.800.458.556 / 1.800.532.2112</p>
+                            </div>
+                        </li>
+                        <!-- QUARTO CON ICONA POSTA -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/>
+                            </div>
+                            <div>
+                                <p>info@your-domain.com</p>
+                            </div>
+                        </li>
+                        <!-- QUINTO CON ICONA OROLOGIO -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-regular fa-clock" class="icon"/>
+                            </div>
+                            <div>
+                                <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+                            </div>
+                        </li>
+                        <!-- SESTO CON ICONA OROLOGIO -->
+                        <li class="d-flex">
+                            <div>
+                                <font-awesome-icon icon="fa-regular fa-clock" class="icon"/>
+                            </div>
+                            <div>
+                                <p>Saturday – Sunday: 9:00 AM – 12:00 PM</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -115,6 +153,11 @@
 
                 li{
                     list-style-type: none;
+
+                    .icon{
+                        margin-right: 10px;
+                        margin-left: -25px;
+                    }
                 }    
             }
         }
@@ -131,6 +174,10 @@
     #bot-footer{
         background-color: black;
         height: 100px;
+
+        p{
+            font-size: 14px;
+        }
 
         .icon{
             margin: 0 10px;
