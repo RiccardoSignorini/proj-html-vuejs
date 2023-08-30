@@ -20,7 +20,7 @@
                 <hr>
                 <img src="/img/home-testimonial-113165296.jpg" alt="" class="my-4 rounded-circle">
                 <p>"No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property."</p>
-                <h6 class="my-4">HARRY SMITH - NEW HOME OWNER</h6>    
+                <h6 class="my-4">HARRY SMITH - NEW HOME OWNER</h6>   
             </div>
         </div>
     </div>

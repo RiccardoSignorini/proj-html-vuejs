@@ -110,10 +110,10 @@
             <p>©COPYRIGHT 2012 - 2023 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED | POWERED BY WORDPRESS</p>
         </div>
         <div>
-            <font-awesome-icon icon="fa-brands fa-facebook-f" class="icon"/>
-            <font-awesome-icon icon="fa-brands fa-twitter" class="icon"/>
-            <font-awesome-icon icon="fa-brands fa-youtube" class="icon"/>
-            <font-awesome-icon icon="fa-brands fa-instagram" class="icon"/>
+            <font-awesome-icon icon="fa-brands fa-facebook-f" class="icon-brand"/>
+            <font-awesome-icon icon="fa-brands fa-twitter" class="icon-brand"/>
+            <font-awesome-icon icon="fa-brands fa-youtube" class="icon-brand"/>
+            <font-awesome-icon icon="fa-brands fa-instagram" class="icon-brand"/>
         </div>
     </div>
 </template>
@@ -132,6 +132,11 @@
             button{
                 background-color: #fed23f;
                 border: 0;
+            }
+
+            button:hover{
+                background-color: #242424;
+                color: white;
             }
 
             p{
@@ -179,7 +184,7 @@
             font-size: 14px;
         }
 
-        .icon{
+        .icon-brand{
             margin: 0 10px;
         }
     }
